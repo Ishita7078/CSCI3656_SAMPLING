@@ -11,7 +11,7 @@ def inverse_transform_analytic(f_inv, n, rng=None):
     return f_inv(u)
 
 
-def inverse_transform_numeric(pdf, x_min, x_max, n, grid_size=2000, rng=None):
+def inverse_sampling(pdf, x_min, x_max, n, grid_size=2000, rng=None):
     #mumerical inverse transform sampling for arbitrary unnormalized PDF
     if rng is None:
         rng = np.random.default_rng()

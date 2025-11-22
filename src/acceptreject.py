@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def rejection_sampling(f, g, sample_g, m, n, rng=None):
+def ar_sampling(f, g, sample_g, m, n, rng=None):
     if rng is None:
         rng = np.random.default_rng()
 
