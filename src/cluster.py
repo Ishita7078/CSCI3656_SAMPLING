@@ -10,7 +10,7 @@ def create_clusters(n_clusters, pdf, sample_fn, rng=None):
     return params, pops
 
 
-def cluster_sample_indices(n_clusters, k, rng=None):
+def cluster_sampling(n_clusters, k, rng=None):
     #randomly select k clusters
     if rng is None: 
         rng = np.random.default_rng()
